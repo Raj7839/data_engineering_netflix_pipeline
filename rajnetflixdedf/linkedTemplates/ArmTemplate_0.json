@@ -71,7 +71,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "*.csv",
+						"fileName": "netflix_titles.csv",
 						"fileSystem": "raw"
 					},
 					"columnDelimiter": ",",
@@ -323,7 +323,7 @@
 						"typeProperties": {
 							"variableName": "github_metadata",
 							"value": {
-								"value": "@activity('raj_github_metadata').output",
+								"value": "@activity('raj_github_metadata').output.Response",
 								"type": "Expression"
 							}
 						}
@@ -334,7 +334,7 @@
 				},
 				"parameters": {
 					"p_array": {
-						"type": "object",
+						"type": "array",
 						"defaultValue": [
 							{
 								"folder_name": "netflix_cast",
