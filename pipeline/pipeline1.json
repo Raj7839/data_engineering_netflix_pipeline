@@ -153,7 +153,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "github_metadata",
-					"value": ""
+					"value": {
+						"value": "@activity('raj_github_metadata').output",
+						"type": "Expression"
+					}
 				}
 			}
 		],
