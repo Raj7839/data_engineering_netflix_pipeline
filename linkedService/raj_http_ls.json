@@ -1,0 +1,13 @@
+{
+	"name": "raj_http_ls",
+	"properties": {
+		"description": "this linked service will be used to fetch the data from the githup repo using http linked service",
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
