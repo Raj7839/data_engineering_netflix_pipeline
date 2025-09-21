@@ -130,7 +130,7 @@
 						"type": "Validation",
 						"dependsOn": [
 							{
-								"activity": "Set variable1",
+								"activity": "output_metadata",
 								"dependencyConditions": [
 									"Succeeded"
 								]
@@ -166,7 +166,7 @@
 						}
 					},
 					{
-						"name": "Set variable1",
+						"name": "output_metadata",
 						"type": "SetVariable",
 						"dependsOn": [
 							{
@@ -195,7 +195,7 @@
 				},
 				"parameters": {
 					"p_array": {
-						"type": "array",
+						"type": "object",
 						"defaultValue": [
 							{
 								"folder_name": "netflix_cast",
